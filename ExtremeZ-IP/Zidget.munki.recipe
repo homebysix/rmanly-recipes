@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Description</key>
+    <string>Imports the latest Zidget widget into munki</string>
+    <key>Identifier</key>
+    <string>com.github.rmanly.install.Zidget</string>
+    <key>Input</key>
+    <dict>
+    </dict>
+    <key>ParentRecipe</key>
+    <string>com.github.rmanly.download.Zidget</string>
+    <key>Process</key>
+    <array>
+      <dict>
+        <key>Processor</key>
+        <string>Unarchiver</string>
+      </dict>
+    </array>
+  </dict>
+</plist>
