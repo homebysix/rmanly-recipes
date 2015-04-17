@@ -13,6 +13,8 @@
       Be sure to change as needed for your environment. -->
       <key>HOSTNAME</key>
       <string>extremezipserverlist.glenbrook225.org</string>
+      <key>NAME</key>
+      <string>Zidget</string>
     </dict>
     <key>Process</key>
     <array>
@@ -20,10 +22,27 @@
         <key>Processor</key>
         <string>URLDownloader</string>
         <key>Arguments</key>
-          <dict>
-            <key>url</key>
-            <string>http://%HOSTNAME%:8081/Zidget.wdgt.zip</string>
-          </dict>
+        <dict>
+          <key>url</key>
+          <string>http://%HOSTNAME%:8081/Zidget.wdgt.zip</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>Processor</key>
+        <string>EndOfCheckPhase</string>
+      </dict>
+      <dict>
+        <key>Processor</key>
+        <string>Unarchiver</string>
+        <key>Arguments</key>
+        <dict>
+          <key>archive_path</key>
+          <string>%pathname%</string>
+          <key>destination_path</key>
+          <string>%RECIPE_CACHE_DIR%/%NAME%</string>
+          <key>purge_destination</key>
+          <true/>
+        </dict>
       </dict>
     </array>
   </dict>
