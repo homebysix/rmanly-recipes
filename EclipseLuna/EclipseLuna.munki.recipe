@@ -78,6 +78,10 @@
           <dict>
             <key>version</key>
             <string>%version%</string>
+            <key>requires</key>
+            <array>
+              <string>OracleJava8JDK</string>
+            </array>
           </dict>
         </dict>
       </dict>
@@ -96,6 +100,12 @@
             <string>eclipse</string>
             <string>--destinationpath</string>
             <string>/Applications</string>
+            <string>--owner</string>
+            <string>root</string>
+            <string>--group</string>
+            <string>admin</string>
+            <string>--mode<string>
+            <string>go-w<string>
           </array>
         </dict>
       </dict>
