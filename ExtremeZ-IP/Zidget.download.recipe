@@ -8,8 +8,6 @@
     <string>com.github.rmanly.download.Zidget</string>
     <key>Input</key>
     <dict>
-      <key>NAME</key>
-      <string>Zidget</string>
       <key>HOSTNAME</key>
       <string>extremezipserverlist.glenbrook225.org</string>
     </dict>
