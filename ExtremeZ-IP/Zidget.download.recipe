@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Description</key>
+    <string></string>
+    <key>Identifier</key>
+    <string>com.github.rmanly.download.Zidget</string>
+    <key>Input</key>
+    <dict>
+      <key>NAME</key>
+      <string>Zidget</string>
+      <key>HOSTNAME</key>
+      <string>extremezipserverlist.glenbrook225.org</string>
+    </dict>
+    <key>Process</key>
+    <array>
+      <dict>
+        <key>Processor</key>
+        <string>URLDownloader</string>
+        <key>Arguments</key>
+          <dict>
+            <key>url</key>
+            <string>http://%HOSTNAME%:8081/Zidget.wdgt.zip</string>
+          </dict>
+      </dict>
+    </array>
+  </dict>
+</plist>
