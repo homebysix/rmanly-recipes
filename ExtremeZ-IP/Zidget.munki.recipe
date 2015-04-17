@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Imports the latest Zidget widget into munki</string>
     <key>Identifier</key>
-    <string>com.github.rmanly.install.Zidget</string>
+    <string>com.github.rmanly.munki.Zidget</string>
     <key>Input</key>
     <dict>
     </dict>
