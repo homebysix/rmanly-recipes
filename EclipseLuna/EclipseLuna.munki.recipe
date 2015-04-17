@@ -104,8 +104,8 @@
             <string>root</string>
             <string>--group</string>
             <string>admin</string>
-            <string>--mode<string>
-            <string>go-w<string>
+            <string>--mode</string>
+            <string>go-w</string>
           </array>
         </dict>
       </dict>
