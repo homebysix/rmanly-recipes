@@ -27,12 +27,10 @@
         <key>installs</key>
         <array>
           <dict>
-            <key>CFBundleShortVersionString</key>
-            <string>%VERSION%</string>
             <key>path</key>
-            <string>/Applications/eclipse/eclipse.app</string>
+            <string>/Applications/eclipse</string>
             <key>type</key>
-            <string>bundle</string>
+            <string>file</string>
           </dict>
         </array>
         <key>items_to_copy</key>
