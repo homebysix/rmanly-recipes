@@ -22,26 +22,6 @@
         <string>The essential tools for any Java developer, including a Java IDE, a CVS client, Git client, XML Editor, Mylyn, Maven integration and WindowBuilder</string>
         <key>display_name</key>
         <string>%NAME%</string>
-        <key>installer_type</key>
-        <string>copy_from_dmg</string>
-        <key>installs</key>
-        <array>
-          <dict>
-            <key>path</key>
-            <string>/Applications/eclipse</string>
-            <key>type</key>
-            <string>file</string>
-          </dict>
-        </array>
-        <key>items_to_copy</key>
-        <array>
-          <dict>
-            <key>destination_path</key>
-            <string>/Applications</string>
-            <key>source_item</key>
-            <string>eclipse</string>
-          </dict>
-        </array>
         <key>name</key>
         <string>%NAME%</string>
         <key>unattended_install</key>
@@ -79,6 +59,8 @@
         </dict>
       </dict>
       <dict>
+        <key>Processor</key>
+        <string>DmgCreator</string>
         <key>Arguments</key>
         <dict>
           <key>dmg_root</key>
@@ -86,19 +68,24 @@
           <key>dmg_path</key>
           <string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
         </dict>
-        <key>Processor</key>
-        <string>DmgCreator</string>
       </dict>
       <dict>
+        <key>Processor</key>
+        <string>MunkiImporter</string>
         <key>Arguments</key>
         <dict>
           <key>pkg_path</key>
           <string>%RECIPE_CACHE_DIR%/%NAME%.dmg</string>
           <key>repo_subdirectory</key>
           <string>%MUNKI_REPO_SUBDIR%</string>
+          <key>additional_makepkginfo_options</key>
+          <array>
+            <string>--item</string>
+            <string>eclipse</string>
+            <string>--destinationpath</string>
+            <string>/Applications</string>
+          </array>
         </dict>
-        <key>Processor</key>
-        <string>MunkiImporter</string>
       </dict>
     </array>
   </dict>
