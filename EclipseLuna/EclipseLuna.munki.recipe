@@ -22,6 +22,19 @@
         <string>The essential tools for any Java developer, including a Java IDE, a CVS client, Git client, XML Editor, Mylyn, Maven integration and WindowBuilder</string>
         <key>display_name</key>
         <string>%NAME%</string>
+        <key>installer_type</key>
+        <string>copy_from_dmg</string>
+        <key>installs</key>
+        <array>
+          <dict>
+            <key>CFBundleShortVersionString</key>
+            <string>%VERSION%</string>
+            <key>path</key>
+            <string>/Applications/eclipse/eclipse.app</string>
+            <key>type</key>
+            <string>bundle</string>
+          </dict>
+        </array>
         <key>items_to_copy</key>
         <array>
           <dict>
