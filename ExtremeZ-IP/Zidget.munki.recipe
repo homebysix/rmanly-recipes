@@ -8,6 +8,31 @@
     <string>com.github.rmanly.munki.Zidget</string>
     <key>Input</key>
     <dict>
+      <key>NAME</key>
+      <string>Zidget</string>
+      <key>MUNKI_REPO_SUBDIR</key>
+      <string>utilities</string>
+      <key>pkginfo</key>
+      <dict>
+        <key>catalogs</key>
+        <array>
+          <string>testing</string>
+        </array>
+        <key>category</key>
+        <string></string>
+        <key>description</key>
+        <string>Zidget is a Dashboard Widget that the Macintosh user can use to discover and connect to a file server whether or not the server is in the user’s local subnet. Zidget also allows the Macintosh user to browse DFS namespaces that are shared through the ExtremeZ-IP server. Using Zidget, the Macintosh user can also browse for and add ExtremeZ-IP printers.</string>
+        <key>developer</key>
+        <string>Acronis International GmbH</string>
+        <key>display_name</key>
+        <string>Zidget Dashboard Widget</string>
+        <key>name</key>
+        <string>%NAME%</string>
+        <key>unattended_install</key>
+        <true/>
+        <key>unattended_uninstall</key>
+        <true/>
+      </dict>
     </dict>
     <key>ParentRecipe</key>
     <string>com.github.rmanly.download.Zidget</string>
