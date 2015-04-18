@@ -12,6 +12,8 @@
       <string>Zidget</string>
       <key>MUNKI_REPO_SUBDIR</key>
       <string>utilities</string>
+      <key>DESTINATION_PATH</key>
+      <string>/Library/Widgets</string>
       <key>pkginfo</key>
       <dict>
         <key>catalogs</key>
@@ -56,6 +58,42 @@
           <string>%RECIPE_CACHE_DIR%/%NAME%</string>
           <key>dmg_path</key>
           <string>%RECIPE_CACHE_DIR%/%NAME%-%version%.dmg</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>Processor</key>
+        <string>MunkiPkginfoMerger</string>
+        <key>Arguments</key>
+        <dict>
+          <key>additional_pkginfo</key>
+          <dict>
+            <key>version</key>
+            <string>%version%</string>
+          </dict>
+        </dict>
+      </dict>
+      <dict>
+        <key>Processor</key>
+        <string>MunkiImporter</string>
+        <key>Arguments</key>
+        <dict>
+          <key>pkg_path</key>
+          <string>%dmg_path%</string>
+          <key>repo_subdirectory</key>
+          <string>%MUNKI_REPO_SUBDIR%</string>
+          <key>additional_makepkginfo_options</key>
+          <array>
+            <string>--item</string>
+            <string>Zidget.wdgt</string>
+            <string>--destinationpath</string>
+            <string>%DESTINATION_PATH%</string>
+            <string>--owner</string>
+            <string>root</string>
+            <string>--group</string>
+            <string>admin</string>
+            <string>--mode</string>
+            <string>go-w</string>
+          </array>
         </dict>
       </dict>
     </array>
