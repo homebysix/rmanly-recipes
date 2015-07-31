@@ -21,6 +21,8 @@
           <!-- requires admin rights to unzip here -->
           <key>destination_path</key>
           <string>/Library/Widgets</string>
+          <key>purge_destination</key>
+          <false/>
         </dict>
       </dict>
     </array>
