@@ -11,7 +11,7 @@
       <key>NAME</key>
       <string>Zidget</string>
       <key>MUNKI_REPO_SUBDIR</key>
-      <string>utilities</string>
+      <string>apps/Acronis/Zidget</string>
       <key>DESTINATION_PATH</key>
       <string>/Library/Widgets</string>
       <key>pkginfo</key>
@@ -69,6 +69,24 @@
           <dict>
             <key>version</key>
             <string>%version%</string>
+            <key>installcheck_script</key>
+            <string>#!/usr/bin/python
+
+from plistlib import readPlist
+from distutils.version import StrictVersion
+
+try:
+    info = readPlist('/Library/Widgets/Zidget.wdgt/Info.plist')
+except IOError:
+    exit(0)
+
+current_version = info['CFBundleVersion']
+
+if StrictVersion('%version%') > StrictVersion(current_version):
+    exit(0)
+else:
+    exit(1)
+</string>
           </dict>
         </dict>
       </dict>
