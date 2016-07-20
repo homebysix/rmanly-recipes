@@ -30,6 +30,14 @@
         <string>Zidget Dashboard Widget</string>
         <key>name</key>
         <string>%NAME%</string>
+        <key>postinstall_script</key>
+        <string>#!/bin/bash
+
+# if the old Zidget is on the Dashboard the new assets don't load
+/usr/bin/pkill Dashboard
+
+exit 0
+        </string>
         <key>unattended_install</key>
         <true/>
         <key>unattended_uninstall</key>
