@@ -3,14 +3,11 @@
 <plist version="1.0">
   <dict>
     <key>Description</key>
-    <string></string>
+    <string>Download recipe for the Acronis Dashboard widget called the Zidget. The HOSTNAME recipe variable is your local file or print server running Acronis Access Connect. You may already have a CNAME in DNS for ExtremeZIPServerList, the default. If you are still running ExtremeZ-IP this recipe works for that as well.</string>
     <key>Identifier</key>
     <string>com.github.rmanly.download.Zidget</string>
     <key>Input</key>
     <dict>
-      <!-- extremezipserverlist is probably a CNAME pointing to one
-      of the file / print servers you have running Access Connect.
-      Be sure to change as needed for your environment. -->
       <key>HOSTNAME</key>
       <string>extremezipserverlist.glenbrook225.org</string>
       <key>NAME</key>
