@@ -8,8 +8,8 @@
     <string>com.github.rmanly.download.Zidget</string>
     <key>Input</key>
     <dict>
-      <!-- extremezipserverlist is probably a CNAME pointing
-      to one of the print servers you have running ExtremeZ-IP.
+      <!-- extremezipserverlist is probably a CNAME pointing to one
+      of the file / print servers you have running Access Connect.
       Be sure to change as needed for your environment. -->
       <key>HOSTNAME</key>
       <string>extremezipserverlist.glenbrook225.org</string>

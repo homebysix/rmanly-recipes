@@ -75,6 +75,7 @@
 from plistlib import readPlist
 from distutils.version import StrictVersion
 
+# assuming if there is an IOError it is because it is not installed
 try:
     info = readPlist('/Library/Widgets/Zidget.wdgt/Info.plist')
 except IOError:
@@ -82,6 +83,7 @@ except IOError:
 
 current_version = info['CFBundleVersion']
 
+# if the version obtained by AutoPkg is greater than the version on the system
 if StrictVersion('%version%') > StrictVersion(current_version):
     exit(0)
 else:
