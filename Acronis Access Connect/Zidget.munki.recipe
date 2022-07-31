@@ -78,7 +78,7 @@ exit 0
             <key>version</key>
             <string>%version%</string>
             <key>installcheck_script</key>
-            <string>#!/usr/bin/python
+            <string>#!/usr/local/autopkg/python
 
 from plistlib import readPlist
 from distutils.version import StrictVersion
